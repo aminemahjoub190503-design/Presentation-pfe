@@ -46,7 +46,7 @@ export default function Limites() {
         </div>
       </div>
 
-      <SlideFooter n={26} />
+      <SlideFooter n={24} />
     </SlideShell>
   );
 }

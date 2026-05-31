@@ -41,7 +41,7 @@ export default function ValeurAjoutee() {
         </div>
       </div>
 
-      <SlideFooter n={25} />
+      <SlideFooter n={23} />
     </SlideShell>
   );
 }

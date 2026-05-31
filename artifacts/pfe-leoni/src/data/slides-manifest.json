@@ -155,29 +155,13 @@
     "id": "4258b013-f442-4202-8e2b-cdf02eac9f61",
     "position": 20,
     "filepath": "src/pages/slides/KaizenHub.tsx",
-    "title": "Module — Kaizen Hub",
-    "description": "Amélioration continue pilotée.",
-    "speakerNotes": ""
-  },
-  {
-    "id": "4fcea43f-338c-49ba-897e-84bf58e030f8",
-    "position": 21,
-    "filepath": "src/pages/slides/VsmStudio.tsx",
-    "title": "Module — VSM Studio",
-    "description": "Cartographie du flux de valeur.",
-    "speakerNotes": ""
-  },
-  {
-    "id": "b22d9b74-5ec7-447c-bf33-106c5afe364e",
-    "position": 22,
-    "filepath": "src/pages/slides/ProjectPortfolio.tsx",
-    "title": "Module — Project Portfolio",
-    "description": "Pilotage structuré des projets.",
+    "title": "Modules 4, 5 & 6 — Kaizen · VSM · Portefeuille de Projets",
+    "description": "Vue combinée : CI / Kaizen Hub, VSM Studio et Portefeuille de Projets.",
     "speakerNotes": ""
   },
   {
     "id": "107eaa20-f750-4e32-82af-08a2d1a6fdb5",
-    "position": 23,
+    "position": 21,
     "filepath": "src/pages/slides/AiCoPilot.tsx",
     "title": "Module — AI Co-Pilot",
     "description": "Assistant intelligent reliant tous les modules.",
@@ -185,7 +169,7 @@
   },
   {
     "id": "a1f4d2c8-9b7e-4c3a-8f6d-2e5b1c9a7d40",
-    "position": 24,
+    "position": 22,
     "filepath": "src/pages/slides/LiveDemo.tsx",
     "title": "Démonstration live",
     "description": "Ouverture du dashboard réel et déroulé de la démo.",
@@ -193,7 +177,7 @@
   },
   {
     "id": "78c2bab9-ebb6-4edd-87de-40f1f815104d",
-    "position": 25,
+    "position": 23,
     "filepath": "src/pages/slides/ValeurAjoutee.tsx",
     "title": "Valeur ajoutée",
     "description": "Du chaos dispersé au système unifié.",
@@ -201,7 +185,7 @@
   },
   {
     "id": "d4f1a6b8-dd44-4e55-9f66-limites000001",
-    "position": 26,
+    "position": 24,
     "filepath": "src/pages/slides/Limites.tsx",
     "title": "Limites & conditions de réussite",
     "description": "Ce qui reste à valider pour un impact durable.",
@@ -209,7 +193,7 @@
   },
   {
     "id": "f3cd1ec9-f54d-44bf-b43f-f35b80e81204",
-    "position": 27,
+    "position": 25,
     "filepath": "src/pages/slides/Conclusion.tsx",
     "title": "Conclusion",
     "description": "Du pilotage dispersé au pilotage intelligent.",
@@ -217,7 +201,7 @@
   },
   {
     "id": "e5a2b7c9-ee55-4f66-8a77-merci00000001",
-    "position": 28,
+    "position": 26,
     "filepath": "src/pages/slides/Merci.tsx",
     "title": "Merci",
     "description": "Remerciements et ouverture des questions.",
