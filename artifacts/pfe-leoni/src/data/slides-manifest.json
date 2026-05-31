@@ -139,21 +139,13 @@
     "id": "9d23ee11-edb1-41c1-ad1b-11450e0565c8",
     "position": 18,
     "filepath": "src/pages/slides/WarRoom.tsx",
-    "title": "Module — War Room",
-    "description": "Vision globale du site et priorités SQDCM.",
-    "speakerNotes": ""
-  },
-  {
-    "id": "c6fdeafd-5880-4ba2-9c4e-77e6487b9611",
-    "position": 19,
-    "filepath": "src/pages/slides/KpiStudio.tsx",
-    "title": "Module — KPI Studio",
-    "description": "Suivi et interprétation des indicateurs clés.",
+    "title": "Modules 1 & 2 — War Room & KPI Studio",
+    "description": "Vue combinée : Salle de Pilotage (War Room) et KPI Studio.",
     "speakerNotes": ""
   },
   {
     "id": "73f786d1-7c1a-4c60-99e3-e8ec8d363338",
-    "position": 20,
+    "position": 19,
     "filepath": "src/pages/slides/Anomalies.tsx",
     "title": "Module — Anomalies & Actions",
     "description": "Des écarts aux plans d'action structurés.",
@@ -161,7 +153,7 @@
   },
   {
     "id": "4258b013-f442-4202-8e2b-cdf02eac9f61",
-    "position": 21,
+    "position": 20,
     "filepath": "src/pages/slides/KaizenHub.tsx",
     "title": "Module — Kaizen Hub",
     "description": "Amélioration continue pilotée.",
@@ -169,7 +161,7 @@
   },
   {
     "id": "4fcea43f-338c-49ba-897e-84bf58e030f8",
-    "position": 22,
+    "position": 21,
     "filepath": "src/pages/slides/VsmStudio.tsx",
     "title": "Module — VSM Studio",
     "description": "Cartographie du flux de valeur.",
@@ -177,7 +169,7 @@
   },
   {
     "id": "b22d9b74-5ec7-447c-bf33-106c5afe364e",
-    "position": 23,
+    "position": 22,
     "filepath": "src/pages/slides/ProjectPortfolio.tsx",
     "title": "Module — Project Portfolio",
     "description": "Pilotage structuré des projets.",
@@ -185,7 +177,7 @@
   },
   {
     "id": "107eaa20-f750-4e32-82af-08a2d1a6fdb5",
-    "position": 24,
+    "position": 23,
     "filepath": "src/pages/slides/AiCoPilot.tsx",
     "title": "Module — AI Co-Pilot",
     "description": "Assistant intelligent reliant tous les modules.",
@@ -193,7 +185,7 @@
   },
   {
     "id": "a1f4d2c8-9b7e-4c3a-8f6d-2e5b1c9a7d40",
-    "position": 25,
+    "position": 24,
     "filepath": "src/pages/slides/LiveDemo.tsx",
     "title": "Démonstration live",
     "description": "Ouverture du dashboard réel et déroulé de la démo.",
@@ -201,7 +193,7 @@
   },
   {
     "id": "78c2bab9-ebb6-4edd-87de-40f1f815104d",
-    "position": 26,
+    "position": 25,
     "filepath": "src/pages/slides/ValeurAjoutee.tsx",
     "title": "Valeur ajoutée",
     "description": "Du chaos dispersé au système unifié.",
@@ -209,7 +201,7 @@
   },
   {
     "id": "d4f1a6b8-dd44-4e55-9f66-limites000001",
-    "position": 27,
+    "position": 26,
     "filepath": "src/pages/slides/Limites.tsx",
     "title": "Limites & conditions de réussite",
     "description": "Ce qui reste à valider pour un impact durable.",
@@ -217,7 +209,7 @@
   },
   {
     "id": "f3cd1ec9-f54d-44bf-b43f-f35b80e81204",
-    "position": 28,
+    "position": 27,
     "filepath": "src/pages/slides/Conclusion.tsx",
     "title": "Conclusion",
     "description": "Du pilotage dispersé au pilotage intelligent.",
@@ -225,7 +217,7 @@
   },
   {
     "id": "e5a2b7c9-ee55-4f66-8a77-merci00000001",
-    "position": 29,
+    "position": 28,
     "filepath": "src/pages/slides/Merci.tsx",
     "title": "Merci",
     "description": "Remerciements et ouverture des questions.",

@@ -118,7 +118,7 @@ export default function Anomalies() {
         </div>
       </div>
 
-      <SlideFooter n={20} />
+      <SlideFooter n={19} />
     </SlideShell>
   );
 }
