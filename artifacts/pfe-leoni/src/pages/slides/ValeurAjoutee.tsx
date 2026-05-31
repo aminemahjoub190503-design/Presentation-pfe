@@ -1,43 +1,90 @@
 import SlideFooter from "@/components/SlideFooter";
 import SlideShell from "@/components/SlideShell";
 
+const ROWS = [
+  {
+    dimension: "Organisation des données",
+    traditional: "Fichiers séparés, supports manuels",
+    opex: "Environnement unique et centralisé",
+  },
+  {
+    dimension: "Lisibilité de la performance",
+    traditional: "Difficile — consolidation lente",
+    opex: "Vues synthétiques + analyses détaillées",
+  },
+  {
+    dimension: "Lien écart → action",
+    traditional: "Rupture fréquente entre étapes",
+    opex: "Continuité mesure → analyse → action",
+  },
+  {
+    dimension: "Reporting",
+    traditional: "Temps consacré à la mise en forme",
+    opex: "Export PDF / PNG / SVG en un clic",
+  },
+];
+
 export default function ValeurAjoutee() {
   return (
     <SlideShell>
-      <div className="absolute left-1/2 top-[13vh] w-[60vw] -translate-x-1/2 text-center">
-        <p className="fx-rise text-[1.5vw] font-bold uppercase tracking-[0.34em] text-primary">
-          Valeur ajoutée
+      <div className="absolute left-1/2 top-[3.6vh] w-[90vw] -translate-x-1/2">
+        <p className="fx-rise font-display text-[1.4vw] font-bold uppercase tracking-[0.3em] text-primary">
+          Résultats &amp; valeur ajoutée
         </p>
         <h2
-          className="fx-rise mx-auto mt-[2.2vh] font-display text-[4.4vw] font-bold leading-[1.02] tracking-tight text-primary"
-          style={{ animationDelay: "0.1s", textWrap: "balance" }}
+          className="fx-rise mt-[0.5vh] font-display text-[3vw] font-bold leading-[1.04] tracking-tight text-ink"
+          style={{ animationDelay: "0.08s", textWrap: "balance" }}
         >
-          Du chaos dispersé au système unifié
+          Résultats &amp; Valeur Ajoutée par Rapport au Pilotage Traditionnel
         </h2>
       </div>
 
-      <div className="absolute left-1/2 top-[58%] flex w-[88vw] -translate-x-1/2 -translate-y-1/2 items-center justify-center gap-[3vw]">
-        <div className="fx-rise relative h-[36vh] w-[26vw] rounded-3xl bg-white ring-1 ring-primary/12" style={{ animationDelay: "0.2s" }}>
-          <span className="absolute left-[1.6vw] top-[1.6vh] text-[1.5vw] font-bold uppercase tracking-[0.2em] text-muted">Avant</span>
-          <svg viewBox="0 0 320 220" className="h-full w-full p-[1.4vw]" aria-hidden="true">
-            <rect x="30" y="60" width="70" height="44" rx="8" fill="#fff2bd" transform="rotate(-9 65 82)" />
-            <rect x="160" y="40" width="70" height="44" rx="8" fill="none" stroke="#285ccc" strokeOpacity="0.3" strokeWidth="1.6" transform="rotate(8 195 62)" />
-            <rect x="200" y="130" width="70" height="44" rx="8" fill="#fff2bd" transform="rotate(-6 235 152)" />
-            <rect x="60" y="140" width="70" height="44" rx="8" fill="none" stroke="#285ccc" strokeOpacity="0.3" strokeWidth="1.6" transform="rotate(7 95 162)" />
-          </svg>
+      <div className="absolute left-1/2 top-[20vh] w-[90vw] -translate-x-1/2">
+        <p
+          className="fx-rise mb-[1.4vh] font-display text-[1.6vw] font-bold text-primary"
+          style={{ animationDelay: "0.14s" }}
+        >
+          Comparaison Pilotage Traditionnel vs. OPEX Dashboard
+        </p>
+
+        {/* ----- Comparison table ----- */}
+        <div
+          className="fx-rise overflow-hidden rounded-[1vw] shadow-[0_16px_44px_rgba(11,33,80,0.12)] ring-1 ring-primary/12"
+          style={{ animationDelay: "0.2s" }}
+        >
+          {/* Header */}
+          <div className="grid grid-cols-[1.1fr_1.2fr_1.2fr] bg-ink text-white">
+            <div className="px-[1.6vw] py-[1.9vh] font-display text-[1.32vw] font-bold">Dimension</div>
+            <div className="px-[1.6vw] py-[1.9vh] text-center font-display text-[1.32vw] font-bold">Pilotage Traditionnel</div>
+            <div className="px-[1.6vw] py-[1.9vh] text-center font-display text-[1.32vw] font-bold">OPEX Dashboard</div>
+          </div>
+          {/* Rows */}
+          {ROWS.map((r, i) => (
+            <div
+              key={r.dimension}
+              className="grid grid-cols-[1.1fr_1.2fr_1.2fr] items-center border-t border-primary/10"
+              style={{ background: i % 2 === 1 ? "#f6f8fc" : "#ffffff" }}
+            >
+              <div className="px-[1.6vw] py-[2.1vh] text-[1.22vw] font-bold text-ink">{r.dimension}</div>
+              <div className="px-[1.6vw] py-[2.1vh] text-center text-[1.18vw] font-semibold text-[#e2574c]">{r.traditional}</div>
+              <div className="px-[1.6vw] py-[2.1vh] text-center text-[1.18vw] font-semibold text-[#2fa86b]">{r.opex}</div>
+            </div>
+          ))}
         </div>
 
-        <svg width="70" height="44" viewBox="0 0 70 44" className="text-primary"><path d="M4 22h54M48 10l14 12-14 12" fill="none" stroke="currentColor" strokeWidth="3.4" strokeLinecap="round" strokeLinejoin="round" pathLength={1} className="fx-draw" style={{ animationDelay: "0.5s" }} /></svg>
-
-        <div className="fx-rise flex h-[36vh] w-[40vw] flex-col justify-center rounded-3xl bg-primary px-[2.4vw] shadow-[0_24px_64px_rgba(40,92,204,0.28)]" style={{ animationDelay: "0.4s" }}>
-          <span className="text-[1.5vw] font-bold uppercase tracking-[0.2em] text-white/70">Après · OPEX Dashboard</span>
-          <div className="mt-[2vh] grid grid-cols-2 gap-x-[2vw] gap-y-[1.4vh]">
-            <span className="text-[2vw] font-semibold text-white">Centralisation</span>
-            <span className="text-[2vw] font-semibold text-white">Lisibilité</span>
-            <span className="text-[2vw] font-semibold text-white">Réactivité</span>
-            <span className="text-[2vw] font-semibold text-white">Traçabilité</span>
-            <span className="col-span-2 text-[2vw] font-semibold text-accent">Aide à la décision</span>
-          </div>
+        {/* ----- Real case study box ----- */}
+        <div
+          className="fx-rise mt-[2.4vh] overflow-hidden rounded-[1vw] border-l-[0.5vw] border-primary bg-primary/[0.06] px-[2vw] py-[2.2vh] ring-1 ring-primary/25"
+          style={{ animationDelay: "0.3s" }}
+        >
+          <p className="font-display text-[1.5vw] font-bold text-ink">
+            Cas réel — Siemens Guadalajara (Mexique) : résultats après déploiement d'une plateforme similaire
+          </p>
+          <p className="mt-[1.2vh] text-[1.2vw] font-medium leading-relaxed text-primary">
+            +8% temps d'usinage (6 premiers mois) · Réduction temps changement de série · Baisse arrêts non
+            planifiés · 160 000 $ économies attendues / 2 ans → Confirmation empirique de l'impact d'un pilotage
+            digital intégré
+          </p>
         </div>
       </div>
 
