@@ -64,7 +64,7 @@ export default function Recommandations() {
               <span className="font-display text-[1.45vw] font-bold leading-tight text-white">{c.title}</span>
             </div>
             <div className="flex flex-1 items-start border-l-[0.4vw] border-primary px-[1.6vw] py-[2.2vh]">
-              <p className="text-[1.2vw] font-medium leading-snug text-muted">{c.text}</p>
+              <p className="text-[1.5vw] font-medium leading-snug text-muted">{c.text}</p>
             </div>
           </div>
         ))}
