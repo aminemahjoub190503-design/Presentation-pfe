@@ -96,24 +96,24 @@ function QuadrantCard({ letter, title, items, variant, delay }: Quadrant) {
 
   return (
     <div
-      className={`fx-rise relative overflow-hidden rounded-[1.4vw] px-[1.7vw] py-[1.4vh] ${cardClass}`}
+      className={`fx-rise relative flex flex-col justify-center overflow-hidden rounded-[1.4vw] px-[2vw] py-[2.2vh] ${cardClass}`}
       style={{ animationDelay: delay }}
     >
-      <div className="flex items-center gap-[0.9vw]">
+      <div className="flex items-center gap-[1vw]">
         <span
-          className={`flex h-[2.7vw] w-[2.7vw] items-center justify-center rounded-[0.7vw] font-display text-[1.6vw] font-bold ${badgeClass}`}
+          className={`flex h-[3.2vw] w-[3.2vw] items-center justify-center rounded-[0.8vw] font-display text-[1.95vw] font-bold ${badgeClass}`}
         >
           {letter}
         </span>
-        <p className={`text-[1.5vw] font-bold uppercase tracking-[0.14em] ${titleClass}`}>
+        <p className={`text-[1.75vw] font-bold uppercase tracking-[0.14em] ${titleClass}`}>
           {title}
         </p>
       </div>
-      <ul className={`mt-[1vh] space-y-[0.5vh] text-[1.12vw] font-medium leading-[1.28] ${itemTextClass}`}>
+      <ul className={`mt-[1.4vh] space-y-[0.9vh] text-[1.32vw] font-medium leading-[1.3] ${itemTextClass}`}>
         {items.map((item) => (
           <li key={item} className="flex items-start gap-[0.8vw]">
-            <span className={`mt-[0.65vh] h-[0.62vh] w-[0.62vh] shrink-0 rounded-full ${dotClass}`} />
-            {item}
+            <span className={`mt-[0.8vh] h-[0.7vh] w-[0.7vh] shrink-0 rounded-full ${dotClass}`} />
+            <span>{item}</span>
           </li>
         ))}
       </ul>
@@ -124,56 +124,56 @@ function QuadrantCard({ letter, title, items, variant, delay }: Quadrant) {
 export default function Swot() {
   return (
     <SlideShell>
-      <div className="absolute left-1/2 top-[4.5vh] w-[80vw] -translate-x-1/2 text-center">
-        <p className="fx-rise text-[1.35vw] font-bold uppercase tracking-[0.34em] text-primary">
+      <div className="absolute left-1/2 top-[3.6vh] w-[84vw] -translate-x-1/2 text-center">
+        <p className="fx-rise text-[1.4vw] font-bold uppercase tracking-[0.34em] text-primary">
           Analyse stratégique
         </p>
         <h2
-          className="fx-rise mx-auto mt-[0.8vh] font-display text-[3.5vw] font-bold leading-[1.02] tracking-tight text-primary"
+          className="fx-rise mx-auto mt-[0.6vh] font-display text-[3.5vw] font-bold leading-[1.02] tracking-tight text-primary"
           style={{ animationDelay: "0.1s", textWrap: "balance" }}
         >
           Analyse SWOT — LEONI Tunisia
         </h2>
       </div>
 
-      <div className="absolute left-1/2 top-[58%] w-[76vw] -translate-x-1/2 -translate-y-1/2">
+      <div className="absolute left-1/2 top-[58%] w-[86vw] -translate-x-1/2 -translate-y-1/2">
         {/* Column axis labels */}
-        <div className="mb-[0.9vh] grid grid-cols-2 gap-x-[6vw] pl-[3.4vw]">
+        <div className="mb-[1.2vh] grid grid-cols-2 gap-x-[6vw] pl-[3.4vw]">
           <div className="fx-fade flex items-center justify-center gap-[0.8vw]" style={{ animationDelay: "0.15s" }}>
             <span className="h-[0.9vh] w-[0.9vh] rounded-full bg-primary" />
-            <span className="text-[1.1vw] font-bold uppercase tracking-[0.26em] text-primary">Positif · Atouts</span>
+            <span className="text-[1.2vw] font-bold uppercase tracking-[0.26em] text-primary">Positif · Atouts</span>
           </div>
           <div className="fx-fade flex items-center justify-center gap-[0.8vw]" style={{ animationDelay: "0.2s" }}>
             <span className="h-[0.9vh] w-[0.9vh] rounded-full bg-muted" />
-            <span className="text-[1.1vw] font-bold uppercase tracking-[0.26em] text-muted">Négatif · À surveiller</span>
+            <span className="text-[1.2vw] font-bold uppercase tracking-[0.26em] text-muted">Négatif · À surveiller</span>
           </div>
         </div>
 
-        <div className="relative flex items-stretch gap-[1.4vw]">
+        <div className="relative flex items-stretch gap-[1.6vw]">
           {/* Row axis labels */}
-          <div className="flex w-[2vw] flex-col">
+          <div className="flex w-[2.4vw] flex-col">
             <div className="fx-fade flex flex-1 items-center justify-center" style={{ animationDelay: "0.25s" }}>
-              <span className="text-[1.1vw] font-bold uppercase tracking-[0.3em] text-primary [writing-mode:vertical-rl] rotate-180">
+              <span className="text-[1.2vw] font-bold uppercase tracking-[0.3em] text-primary [writing-mode:vertical-rl] rotate-180">
                 Interne
               </span>
             </div>
             <div className="fx-fade flex flex-1 items-center justify-center" style={{ animationDelay: "0.3s" }}>
-              <span className="text-[1.1vw] font-bold uppercase tracking-[0.3em] text-muted [writing-mode:vertical-rl] rotate-180">
+              <span className="text-[1.2vw] font-bold uppercase tracking-[0.3em] text-muted [writing-mode:vertical-rl] rotate-180">
                 Externe
               </span>
             </div>
           </div>
 
           {/* Quadrant grid */}
-          <div className="relative grid flex-1 grid-cols-2 gap-x-[6vw] gap-y-[1.8vh]">
+          <div className="relative grid flex-1 grid-cols-2 gap-x-[6vw] gap-y-[2.4vh]">
             {QUADRANTS.map((q) => (
               <QuadrantCard key={q.title} {...q} />
             ))}
 
             {/* Center medallion */}
-            <div className="fx-pop pointer-events-none absolute left-1/2 top-1/2 z-10 flex h-[5.6vw] w-[5.6vw] -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-full bg-white shadow-[0_18px_50px_rgba(40,92,204,0.3)] ring-[0.45vh] ring-accent" style={{ animationDelay: "0.44s" }}>
-              <span className="font-display text-[1.6vw] font-bold leading-none text-primary">SWOT</span>
-              <span className="mt-[0.4vh] text-[0.68vw] font-bold uppercase tracking-[0.16em] text-muted">Menzel Hayet</span>
+            <div className="fx-pop pointer-events-none absolute left-1/2 top-1/2 z-10 flex h-[6.6vw] w-[6.6vw] -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-full bg-white shadow-[0_18px_50px_rgba(40,92,204,0.3)] ring-[0.5vh] ring-accent" style={{ animationDelay: "0.44s" }}>
+              <span className="font-display text-[1.9vw] font-bold leading-none text-primary">SWOT</span>
+              <span className="mt-[0.5vh] text-[0.78vw] font-bold uppercase tracking-[0.16em] text-muted">Menzel Hayet</span>
             </div>
           </div>
         </div>
