@@ -1,0 +1,31 @@
+kind = "slides"
+previewPath = "/"
+title = "PFE Leoni"
+version = "1.0.0"
+id = "artifacts/pfe-leoni"
+router = "path"
+
+[[integratedSkills]]
+name = "slides"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20477
+
+[services.development]
+run = "pnpm --filter @workspace/pfe-leoni run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/pfe-leoni", "run", "build" ]
+publicDir = "artifacts/pfe-leoni/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20477"
+BASE_PATH = "/"
