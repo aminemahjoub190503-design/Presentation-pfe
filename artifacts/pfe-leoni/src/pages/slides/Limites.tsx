@@ -95,7 +95,7 @@ export default function Limites() {
         <Column heading="Faiblesses" accent="#7aa6ff" items={FAIBLESSES} baseDelay={0.28} />
       </div>
 
-      <SlideFooter n={24} />
+      <SlideFooter n={23} />
     </SlideShell>
   );
 }

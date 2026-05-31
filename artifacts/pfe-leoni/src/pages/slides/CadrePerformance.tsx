@@ -69,7 +69,7 @@ export default function CadrePerformance() {
         <span className="rounded-full bg-white px-[1vw] py-[0.5vh] font-bold uppercase tracking-[0.16em] text-primary text-[7px] text-center">À retenir</span>
         <p className="text-[1.5vw] font-medium text-white">Le pilotage traditionnel mesure, mais ne relie pas la mesure à la décision.</p>
       </div>
-      <SlideFooter n={11} />
+      <SlideFooter n={10} />
     </SlideShell>
   );
 }

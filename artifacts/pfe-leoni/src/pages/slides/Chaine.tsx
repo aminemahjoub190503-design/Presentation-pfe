@@ -56,7 +56,7 @@ export default function Chaine() {
         </div>
       </div>
 
-      <SlideFooter n={10} />
+      <SlideFooter n={9} />
     </SlideShell>
   );
 }

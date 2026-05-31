@@ -44,7 +44,7 @@ export default function Diagnostic() {
         </svg>
       </div>
 
-      <SlideFooter n={7} />
+      <SlideFooter n={6} />
     </SlideShell>
   );
 }

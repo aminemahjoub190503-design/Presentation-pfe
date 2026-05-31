@@ -46,7 +46,7 @@ export default function Objectifs() {
         </div>
       </div>
 
-      <SlideFooter n={9} />
+      <SlideFooter n={8} />
     </SlideShell>
   );
 }

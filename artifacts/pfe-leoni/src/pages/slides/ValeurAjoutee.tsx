@@ -39,9 +39,9 @@ export default function ValeurAjoutee() {
         </h2>
       </div>
 
-      <div className="absolute left-1/2 top-[20vh] w-[90vw] -translate-x-1/2">
+      <div className="absolute left-1/2 top-[19vh] w-[92vw] -translate-x-1/2">
         <p
-          className="fx-rise mb-[1.4vh] font-display text-[1.6vw] font-bold text-primary"
+          className="fx-rise mb-[1.8vh] font-display text-[1.85vw] font-bold text-primary"
           style={{ animationDelay: "0.14s" }}
         >
           Comparaison Pilotage Traditionnel vs. OPEX Dashboard
@@ -49,14 +49,14 @@ export default function ValeurAjoutee() {
 
         {/* ----- Comparison table ----- */}
         <div
-          className="fx-rise overflow-hidden rounded-[1vw] shadow-[0_16px_44px_rgba(11,33,80,0.12)] ring-1 ring-primary/12"
+          className="fx-rise overflow-hidden rounded-[1.1vw] shadow-[0_18px_50px_rgba(11,33,80,0.14)] ring-1 ring-primary/12"
           style={{ animationDelay: "0.2s" }}
         >
           {/* Header */}
           <div className="grid grid-cols-[1.1fr_1.2fr_1.2fr] bg-ink text-white">
-            <div className="px-[1.6vw] py-[1.9vh] font-display text-[1.32vw] font-bold">Dimension</div>
-            <div className="px-[1.6vw] py-[1.9vh] text-center font-display text-[1.32vw] font-bold">Pilotage Traditionnel</div>
-            <div className="px-[1.6vw] py-[1.9vh] text-center font-display text-[1.32vw] font-bold">OPEX Dashboard</div>
+            <div className="px-[1.9vw] py-[2.6vh] font-display text-[1.55vw] font-bold">Dimension</div>
+            <div className="px-[1.9vw] py-[2.6vh] text-center font-display text-[1.55vw] font-bold">Pilotage Traditionnel</div>
+            <div className="px-[1.9vw] py-[2.6vh] text-center font-display text-[1.55vw] font-bold">OPEX Dashboard</div>
           </div>
           {/* Rows */}
           {ROWS.map((r, i) => (
@@ -65,22 +65,22 @@ export default function ValeurAjoutee() {
               className="grid grid-cols-[1.1fr_1.2fr_1.2fr] items-center border-t border-primary/10"
               style={{ background: i % 2 === 1 ? "#f6f8fc" : "#ffffff" }}
             >
-              <div className="px-[1.6vw] py-[2.1vh] text-[1.22vw] font-bold text-ink">{r.dimension}</div>
-              <div className="px-[1.6vw] py-[2.1vh] text-center text-[1.18vw] font-semibold text-[#e2574c]">{r.traditional}</div>
-              <div className="px-[1.6vw] py-[2.1vh] text-center text-[1.18vw] font-semibold text-[#2fa86b]">{r.opex}</div>
+              <div className="px-[1.9vw] py-[2.9vh] text-[1.42vw] font-bold text-ink">{r.dimension}</div>
+              <div className="px-[1.9vw] py-[2.9vh] text-center text-[1.38vw] font-semibold text-[#e2574c]">{r.traditional}</div>
+              <div className="px-[1.9vw] py-[2.9vh] text-center text-[1.38vw] font-semibold text-[#2fa86b]">{r.opex}</div>
             </div>
           ))}
         </div>
 
         {/* ----- Real case study box ----- */}
         <div
-          className="fx-rise mt-[2.4vh] overflow-hidden rounded-[1vw] border-l-[0.5vw] border-primary bg-primary/[0.06] px-[2vw] py-[2.2vh] ring-1 ring-primary/25"
+          className="fx-rise mt-[3vh] overflow-hidden rounded-[1.1vw] border-l-[0.6vw] border-primary bg-primary/[0.06] px-[2.4vw] py-[2.8vh] ring-1 ring-primary/25"
           style={{ animationDelay: "0.3s" }}
         >
-          <p className="font-display text-[1.5vw] font-bold text-ink">
+          <p className="font-display text-[1.75vw] font-bold text-ink">
             Cas réel — Siemens Guadalajara (Mexique) : résultats après déploiement d'une plateforme similaire
           </p>
-          <p className="mt-[1.2vh] text-[1.2vw] font-medium leading-relaxed text-primary">
+          <p className="mt-[1.5vh] text-[1.4vw] font-medium leading-relaxed text-primary">
             +8% temps d'usinage (6 premiers mois) · Réduction temps changement de série · Baisse arrêts non
             planifiés · 160 000 $ économies attendues / 2 ans → Confirmation empirique de l'impact d'un pilotage
             digital intégré
@@ -88,7 +88,7 @@ export default function ValeurAjoutee() {
         </div>
       </div>
 
-      <SlideFooter n={23} />
+      <SlideFooter n={22} />
     </SlideShell>
   );
 }

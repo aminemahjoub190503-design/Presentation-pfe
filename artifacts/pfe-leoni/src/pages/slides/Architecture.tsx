@@ -52,7 +52,7 @@ export default function Architecture() {
         </div>
       </div>
 
-      <SlideFooter n={17} />
+      <SlideFooter n={16} />
     </SlideShell>
   );
 }

@@ -27,7 +27,7 @@ export default function Problematique() {
         </h2>
       </div>
 
-      <SlideFooter n={8} />
+      <SlideFooter n={7} />
     </SlideShell>
   );
 }

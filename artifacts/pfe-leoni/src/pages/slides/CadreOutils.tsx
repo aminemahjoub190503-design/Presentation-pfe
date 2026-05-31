@@ -43,7 +43,7 @@ export default function CadreOutils() {
         <p className="text-[1.45vw] font-medium text-white">Chaque outil est intégré dans un module concret de la solution.</p>
       </div>
 
-      <SlideFooter n={13} />
+      <SlideFooter n={12} />
     </SlideShell>
   );
 }

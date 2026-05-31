@@ -171,7 +171,7 @@ export default function ModulesKaizenVsmPortfolio() {
         </Panel>
       </div>
 
-      <SlideFooter n={20} />
+      <SlideFooter n={19} />
     </SlideShell>
   );
 }

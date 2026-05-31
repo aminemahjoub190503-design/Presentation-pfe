@@ -179,7 +179,7 @@ export default function Swot() {
         </div>
       </div>
 
-      <SlideFooter n={6} />
+      <SlideFooter n={5} />
     </SlideShell>
   );
 }

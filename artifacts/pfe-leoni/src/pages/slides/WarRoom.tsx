@@ -158,7 +158,7 @@ export default function ModulesWarRoomKpi() {
         </div>
       </div>
 
-      <SlideFooter n={18} />
+      <SlideFooter n={17} />
     </SlideShell>
   );
 }

@@ -60,7 +60,7 @@ export default function OpexDashboard() {
         </div>
       </div>
 
-      <SlideFooter n={16} />
+      <SlideFooter n={15} />
     </SlideShell>
   );
 }
