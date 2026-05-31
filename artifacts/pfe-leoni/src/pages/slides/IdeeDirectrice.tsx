@@ -34,7 +34,7 @@ export default function IdeeDirectrice() {
         <div className="fx-pop absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/4 font-display text-[1.5vw] font-bold text-primary" style={{ animationDelay: "0.8s" }}>Agir</div>
       </div>
 
-      <SlideFooter n={16} />
+      <SlideFooter n={15} />
     </SlideShell>
   );
 }

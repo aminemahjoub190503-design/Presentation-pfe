@@ -38,7 +38,7 @@ export default function Conclusion() {
         L'OPEX Dashboard transforme des données dispersées en décisions concrètes.
       </p>
 
-      <SlideFooter n={29} />
+      <SlideFooter n={28} />
     </SlideShell>
   );
 }

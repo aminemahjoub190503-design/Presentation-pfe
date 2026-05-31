@@ -56,7 +56,7 @@ export default function ProjectPortfolio() {
         </div>
       </div>
 
-      <SlideFooter n={24} />
+      <SlideFooter n={23} />
     </SlideShell>
   );
 }

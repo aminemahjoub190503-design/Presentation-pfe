@@ -48,7 +48,7 @@ export default function OpexRole() {
         </div>
       </div>
 
-      <SlideFooter n={6} />
+      <SlideFooter n={5} />
     </SlideShell>
   );
 }

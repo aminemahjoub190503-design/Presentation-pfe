@@ -45,7 +45,7 @@ export default function VsmStudio() {
         </div>
       </div>
 
-      <SlideFooter n={23} />
+      <SlideFooter n={22} />
     </SlideShell>
   );
 }

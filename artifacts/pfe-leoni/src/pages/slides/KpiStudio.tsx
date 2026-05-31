@@ -43,7 +43,7 @@ export default function KpiStudio() {
         </svg>
       </div>
 
-      <SlideFooter n={20} />
+      <SlideFooter n={19} />
     </SlideShell>
   );
 }

@@ -1,0 +1,1 @@
+- [PFE Leoni footer numbers](pfe-leoni-slides.md) — footer `n` is hardcoded per slide; re-sync to manifest position after any add/remove/reorder.

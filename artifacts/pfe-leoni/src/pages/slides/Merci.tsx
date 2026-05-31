@@ -34,7 +34,7 @@ export default function Merci() {
         </div>
       </div>
 
-      <SlideFooter n={30} />
+      <SlideFooter n={29} />
     </SlideShell>
   );
 }

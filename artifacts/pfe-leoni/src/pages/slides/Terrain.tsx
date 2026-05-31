@@ -139,7 +139,7 @@ export default function Terrain() {
         </div>
       </div>
 
-      <SlideFooter n={4} />
+      <SlideFooter n={3} />
     </SlideShell>
   );
 }

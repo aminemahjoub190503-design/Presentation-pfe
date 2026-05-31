@@ -66,7 +66,7 @@ export default function AiCoPilot() {
         </svg>
       </div>
 
-      <SlideFooter n={25} />
+      <SlideFooter n={24} />
     </SlideShell>
   );
 }

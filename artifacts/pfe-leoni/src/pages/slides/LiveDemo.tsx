@@ -92,7 +92,7 @@ export default function LiveDemo() {
         En cas de problème réseau, retour à la synthèse.
       </p>
 
-      <SlideFooter n={26} />
+      <SlideFooter n={25} />
     </SlideShell>
   );
 }

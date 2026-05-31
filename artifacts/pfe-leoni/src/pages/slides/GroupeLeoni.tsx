@@ -131,7 +131,7 @@ export default function GroupeLeoni() {
         </div>
       </div>
 
-      <SlideFooter n={3} />
+      <SlideFooter n={4} />
     </SlideShell>
   );
 }

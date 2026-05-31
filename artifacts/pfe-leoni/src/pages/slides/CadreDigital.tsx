@@ -56,7 +56,7 @@ export default function CadreDigital() {
         <p className="text-[1.5vw] font-medium text-white">L'OPEX Dashboard réunit ces briques en un seul outil de pilotage intelligent.</p>
       </div>
 
-      <SlideFooter n={15} />
+      <SlideFooter n={14} />
     </SlideShell>
   );
 }

@@ -47,7 +47,7 @@ export default function CadreExcellence() {
         <p className="text-[1.5vw] font-medium text-primary">L'OPEX n'est pas un outil, c'est une culture d'amélioration permanente.</p>
       </div>
 
-      <SlideFooter n={13} />
+      <SlideFooter n={12} />
     </SlideShell>
   );
 }

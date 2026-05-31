@@ -50,7 +50,7 @@ export default function KaizenHub() {
         </div>
       </div>
 
-      <SlideFooter n={22} />
+      <SlideFooter n={21} />
     </SlideShell>
   );
 }

@@ -45,7 +45,7 @@ export default function WarRoom() {
         </div>
       </div>
 
-      <SlideFooter n={19} />
+      <SlideFooter n={18} />
     </SlideShell>
   );
 }
