@@ -32,11 +32,11 @@ const CY = (v: number) => 190 - v * 40; // value 0..4 -> y 190..30
 
 function Bullets({ points, dotColor }: { points: string[]; dotColor: string }) {
   return (
-    <ul className="space-y-[0.8vh] text-[1.12vw] font-medium leading-snug text-ink">
+    <ul className="space-y-[1.3vh] text-[1.28vw] font-medium leading-snug text-ink">
       {points.map((p) => (
         <li key={p} className="flex items-start gap-[0.7vw]">
-          <span className="mt-[0.7vh] h-[0.62vh] w-[0.62vh] shrink-0 rounded-full" style={{ background: dotColor }} />
-          {p}
+          <span className="mt-[0.8vh] h-[0.7vh] w-[0.7vh] shrink-0 rounded-full" style={{ background: dotColor }} />
+          <span>{p}</span>
         </li>
       ))}
     </ul>
@@ -49,43 +49,43 @@ export default function ModulesWarRoomKpi() {
 
   return (
     <SlideShell>
-      <div className="absolute left-1/2 top-[4vh] w-[88vw] -translate-x-1/2">
-        <p className="fx-rise font-display text-[1.3vw] font-bold uppercase tracking-[0.3em] text-primary">
+      <div className="absolute left-1/2 top-[3.6vh] w-[90vw] -translate-x-1/2">
+        <p className="fx-rise font-display text-[1.4vw] font-bold uppercase tracking-[0.3em] text-primary">
           Modules 01 &amp; 02
         </p>
         <h2
-          className="fx-rise mt-[0.6vh] font-display text-[3.3vw] font-bold leading-[1.02] tracking-tight text-ink"
+          className="fx-rise mt-[0.6vh] font-display text-[3.4vw] font-bold leading-[1.02] tracking-tight text-ink"
           style={{ animationDelay: "0.08s", textWrap: "balance" }}
         >
           War Room &amp; KPI Studio
         </h2>
       </div>
 
-      <div className="absolute left-1/2 top-[15.5vh] grid w-[88vw] -translate-x-1/2 grid-cols-2 gap-[2.4vw]">
+      <div className="absolute left-1/2 top-[18vh] grid h-[74vh] w-[90vw] -translate-x-1/2 grid-cols-2 items-stretch gap-[2.4vw]">
         {/* ----- Module 1 — War Room ----- */}
         <div
-          className="fx-rise flex flex-col overflow-hidden rounded-[1.1vw] bg-white shadow-[0_16px_44px_rgba(11,33,80,0.12)] ring-1 ring-primary/10"
+          className="fx-rise flex h-full flex-col overflow-hidden rounded-[1.2vw] bg-white shadow-[0_18px_48px_rgba(11,33,80,0.13)] ring-1 ring-primary/10"
           style={{ animationDelay: "0.16s" }}
         >
-          <div className="flex items-center justify-center bg-ink py-[1.6vh] text-center font-display text-[1.5vw] font-bold text-white">
+          <div className="flex items-center justify-center bg-ink py-[2vh] text-center font-display text-[1.75vw] font-bold text-white">
             Module 1 — Salle de Pilotage (War Room)
           </div>
-          <div className="flex flex-1 flex-col p-[1.6vw]">
-            <div className="grid grid-cols-3 gap-[1vw]">
+          <div className="flex flex-1 flex-col p-[1.9vw]">
+            <div className="grid grid-cols-3 gap-[1.1vw]">
               {KPIS.map((k, i) => (
                 <div
                   key={k.label}
-                  className="fx-pop flex flex-col items-center justify-center rounded-[0.7vw] bg-[#f6f8fc] py-[2vh] text-center"
-                  style={{ animationDelay: `${0.22 + i * 0.05}s`, borderTop: `0.4vh solid ${k.color}` }}
+                  className="fx-pop flex flex-col items-center justify-center rounded-[0.8vw] bg-[#f6f8fc] py-[2.8vh] text-center"
+                  style={{ animationDelay: `${0.22 + i * 0.05}s`, borderTop: `0.45vh solid ${k.color}` }}
                 >
-                  <span className="font-display text-[2.5vw] font-bold leading-none" style={{ color: k.color }}>
+                  <span className="font-display text-[2.9vw] font-bold leading-none" style={{ color: k.color }}>
                     {k.value}
                   </span>
-                  <span className="mt-[0.8vh] text-[1.05vw] font-semibold text-muted">{k.label}</span>
+                  <span className="mt-[1vh] text-[1.2vw] font-semibold text-muted">{k.label}</span>
                 </div>
               ))}
             </div>
-            <div className="mt-[2.2vh]">
+            <div className="mt-auto pt-[2.6vh]">
               <Bullets points={WAR_ROOM_POINTS} dotColor="#0b2150" />
             </div>
           </div>
@@ -93,18 +93,18 @@ export default function ModulesWarRoomKpi() {
 
         {/* ----- Module 2 — KPI Studio ----- */}
         <div
-          className="fx-rise flex flex-col overflow-hidden rounded-[1.1vw] bg-white shadow-[0_16px_44px_rgba(11,33,80,0.12)] ring-1 ring-primary/10"
+          className="fx-rise flex h-full flex-col overflow-hidden rounded-[1.2vw] bg-white shadow-[0_18px_48px_rgba(11,33,80,0.13)] ring-1 ring-primary/10"
           style={{ animationDelay: "0.24s" }}
         >
-          <div className="flex items-center justify-center bg-primary py-[1.6vh] text-center font-display text-[1.5vw] font-bold text-white">
+          <div className="flex items-center justify-center bg-primary py-[2vh] text-center font-display text-[1.75vw] font-bold text-white">
             Module 2 — KPI Studio
           </div>
-          <div className="flex flex-1 flex-col p-[1.6vw]">
-            <div className="rounded-[0.8vw] bg-[#f6f8fc] px-[1.4vw] py-[1.6vh] ring-1 ring-primary/8">
-              <p className="text-center font-display text-[1.2vw] font-bold text-ink">
+          <div className="flex flex-1 flex-col p-[1.9vw]">
+            <div className="rounded-[0.9vw] bg-[#f6f8fc] px-[1.6vw] py-[2vh] ring-1 ring-primary/8">
+              <p className="text-center font-display text-[1.4vw] font-bold text-ink">
                 Scrap Rate — Qualité (ex. de vue KPI)
               </p>
-              <svg viewBox="0 0 480 215" className="mt-[0.6vh] h-[24vh] w-full" aria-hidden="true">
+              <svg viewBox="0 0 480 215" className="mt-[0.8vh] h-[23vh] w-full" aria-hidden="true">
                 {/* gridlines + y labels */}
                 {[0, 2, 4].map((g) => (
                   <g key={g}>
@@ -142,7 +142,7 @@ export default function ModulesWarRoomKpi() {
                 ))}
               </svg>
               {/* legend */}
-              <div className="mt-[0.6vh] flex items-center justify-center gap-[2vw] text-[1vw] font-semibold text-muted">
+              <div className="mt-[0.8vh] flex items-center justify-center gap-[2vw] text-[1.12vw] font-semibold text-muted">
                 <span className="flex items-center gap-[0.5vw]">
                   <span className="h-[0.4vh] w-[1.4vw] rounded-full bg-primary" /> Scrap Rate (%)
                 </span>
@@ -151,7 +151,7 @@ export default function ModulesWarRoomKpi() {
                 </span>
               </div>
             </div>
-            <div className="mt-[2.2vh]">
+            <div className="mt-auto pt-[2.6vh]">
               <Bullets points={KPI_STUDIO_POINTS} dotColor="#285ccc" />
             </div>
           </div>
