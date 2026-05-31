@@ -171,9 +171,9 @@ export default function Swot() {
             ))}
 
             {/* Center medallion */}
-            <div className="fx-pop pointer-events-none absolute left-1/2 top-1/2 z-10 flex h-[6.6vw] w-[6.6vw] -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-full bg-white shadow-[0_18px_50px_rgba(40,92,204,0.3)] ring-[0.5vh] ring-accent" style={{ animationDelay: "0.44s" }}>
+            <div className="fx-pop pointer-events-none absolute left-1/2 top-1/2 z-10 flex h-[6.6vw] w-[6.6vw] -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-full bg-white text-center shadow-[0_18px_50px_rgba(40,92,204,0.3)] ring-[0.5vh] ring-accent" style={{ animationDelay: "0.44s" }}>
               <span className="font-display text-[1.9vw] font-bold leading-none text-primary">SWOT</span>
-              <span className="mt-[0.5vh] text-[0.78vw] font-bold uppercase tracking-[0.16em] text-muted">Menzel Hayet</span>
+              <span className="mt-[0.5vh] whitespace-nowrap text-[0.7vw] font-bold uppercase tracking-[0.12em] text-muted">Menzel Hayet</span>
             </div>
           </div>
         </div>
