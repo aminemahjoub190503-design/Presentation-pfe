@@ -9,8 +9,8 @@ export default function IdeeDirectrice() {
           L'idée directrice
         </p>
         <h2
-          className="fx-rise mx-auto mt-[2.2vh] font-display text-[4.4vw] font-bold leading-[1.02] tracking-tight text-primary"
-          style={{ animationDelay: "0.1s", textWrap: "balance" }}
+          className="fx-rise mx-auto mt-[2.2vh] whitespace-nowrap font-display text-[4.4vw] font-bold leading-[1.02] tracking-tight text-primary"
+          style={{ animationDelay: "0.1s" }}
         >
           Un seul système, quatre gestes
         </h2>
