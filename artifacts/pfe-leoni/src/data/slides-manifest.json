@@ -1,1 +1,234 @@
-[]
+[
+  {
+    "id": "6c6bd465-c65b-49fb-993f-7ff5f2669473",
+    "position": 1,
+    "filepath": "src/pages/slides/Cover.tsx",
+    "title": "Couverture",
+    "description": "Page de titre du PFE — sujet, étudiant et encadrantes.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "b8e1a2c4-1d3f-4a6b-9c2e-7f5a0d4e8b11",
+    "position": 2,
+    "filepath": "src/pages/slides/Sommaire.tsx",
+    "title": "Sommaire",
+    "description": "Plan de la présentation en quatre grandes parties.",
+    "speakerNotes": "Je présente d'abord le plan : 1) l'entreprise et le terrain — le groupe LEONI, le site de Menzel Hayet et le département OPEX ; 2) le diagnostic, la problématique, les objectifs et la démarche ; 3) le cadre théorique — performance, excellence opérationnelle et digitalisation ; 4) la solution proposée, son architecture, la démonstration et ses limites."
+  },
+  {
+    "id": "23b18eea-4325-4a09-8157-ddd7042cc38a",
+    "position": 3,
+    "filepath": "src/pages/slides/Terrain.tsx",
+    "title": "Le groupe LEONI en chiffres",
+    "description": "Chiffres clés, activités principales et les 5 sites tunisiens.",
+    "speakerNotes": "LEONI en chiffres : fondé en 1917, présent dans plus de 25 pays, environ 90 000 collaborateurs dans le monde, et un positionnement fort sur l'électromobilité. Ses activités : conception et fabrication de systèmes de câblage automobile, transmission d'énergie et de données dans les véhicules, et adaptation continue aux exigences de l'électromobilité. En Tunisie, le groupe est présent depuis 1977, avec 5 sites de production et environ 24 000 employés : Mateur South (4 831), Mateur North (3 931), Sidi Bouali (1 435), Sousse (6 931) et Menzel Hayet (6 986), notre site d'accueil."
+  },
+  {
+    "id": "c9f2b3d5-2e4a-4b7c-8d3f-1a6b0c5e9f22",
+    "position": 4,
+    "filepath": "src/pages/slides/GroupeLeoni.tsx",
+    "title": "LEONI Menzel Hayet",
+    "description": "Le site d'accueil : chiffres clés, spécialisation MEB, rôle de l'OPEX et axes SQDCM.",
+    "speakerNotes": "Le site de Menzel Hayet, dans la région de Monastir, s'étend sur environ 102 000 m², compte deux unités (MH1 & MH2), près de 7 000 collaborateurs et produit l'équivalent d'environ 2,4 millions de véhicules par an. Il est spécialisé dans l'électromobilité via le projet MEB (Modular Elektrobaukasten), la plateforme 100 % électrique de Volkswagen, pour VW, Seat, Audi et Ford — modèles NEO et ASUVE. Le département OPEX y joue un rôle central : amélioration continue, suivi des KPI, analyse des écarts et actions correctives, Lean Management et Kaizen, en interaction transversale avec tous les départements. La performance est pilotée selon les cinq axes SQDCM : Sécurité, Qualité, Délai, Coût et Moral."
+  },
+  {
+    "id": "f1a7c0e2-aa11-4b22-9c33-opexrole00001",
+    "position": 5,
+    "filepath": "src/pages/slides/OpexRole.tsx",
+    "title": "Le département OPEX",
+    "description": "Rôle du département Excellence Opérationnelle sur le site.",
+    "speakerNotes": "Le département Excellence Opérationnelle — Operational Excellence, OPEX — est le levier d'amélioration continue du site. Son rôle : suivre la performance, analyser les écarts, animer l'amélioration continue (Lean, Kaizen) et structurer les actions correctives. C'est une fonction transversale qui travaille avec la production, la qualité et la chaîne logistique. C'est au sein de ce département que s'est déroulé le projet."
+  },
+  {
+    "id": "d0a3c4e6-3f5b-4c8d-9e4a-2b7c1d6f0a33",
+    "position": 6,
+    "filepath": "src/pages/slides/Swot.tsx",
+    "title": "Analyse SWOT",
+    "description": "Forces, faiblesses, opportunités et menaces du site.",
+    "speakerNotes": "Cette matrice SWOT résume le contexte : un site mature et certifié avec une main-d'œuvre qualifiée (forces), mais des données dispersées et un pilotage encore manuel et réactif (faiblesses). La digitalisation et la démarche Lean/Kaizen ouvrent de vraies opportunités, face à des menaces comme la concurrence low-cost et l'exigence croissante des clients. C'est ce constat qui justifie le projet."
+  },
+  {
+    "id": "11babbef-2476-45a9-b258-4034a4c612b8",
+    "position": 7,
+    "filepath": "src/pages/slides/Diagnostic.tsx",
+    "title": "Diagnostic de l'existant",
+    "description": "Constats sur le pilotage actuel de la performance.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "e5256129-ef18-4d6a-b990-fb0ab2d2c1ca",
+    "position": 8,
+    "filepath": "src/pages/slides/Problematique.tsx",
+    "title": "Problématique",
+    "description": "La question centrale du projet.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "b2d9e4f6-bb22-4c33-9d44-objectifs0001",
+    "position": 9,
+    "filepath": "src/pages/slides/Objectifs.tsx",
+    "title": "Objectifs du projet",
+    "description": "Ce que la solution doit concrètement permettre.",
+    "speakerNotes": "À partir de la problématique, le projet vise cinq objectifs : centraliser les indicateurs clés de performance (KPI), visualiser la performance et les anomalies, relier les indicateurs aux anomalies et aux actions, assurer la traçabilité des actions correctives, et soutenir la décision managériale — le tout en améliorant la lisibilité globale du pilotage."
+  },
+  {
+    "id": "21400c10-805a-48d9-b7c4-0f62fe8612a8",
+    "position": 10,
+    "filepath": "src/pages/slides/Chaine.tsx",
+    "title": "Démarche méthodologique",
+    "description": "De l'observation terrain à la structuration des besoins.",
+    "speakerNotes": "La démarche s'est appuyée sur le terrain : observation du site et des interactions entre départements, participation aux réunions Shopfloor et SHTUNG, réalisation de Gemba Walk avec l'équipe OPEX, puis analyse des KPI et identification des écarts. Cette immersion a permis de structurer les besoins réels de pilotage avant de concevoir la solution."
+  },
+  {
+    "id": "aa11bb22-cadre-perf-000000000001",
+    "position": 11,
+    "filepath": "src/pages/slides/CadrePerformance.tsx",
+    "title": "Cadre théorique — Performance & KPI",
+    "description": "Performance, KPI, SQDCM et limites du pilotage traditionnel.",
+    "speakerNotes": "Premier pilier : la performance industrielle, c'est l'efficacité (atteindre les objectifs) et l'efficience (optimiser les ressources). On la mesure avec des KPI — indicateurs clés — organisés selon le référentiel SQDCM : Safety, Quality, Delivery, Cost, Morale. Mais le pilotage traditionnel montre ses limites : données dispersées entre plusieurs fichiers, traitements manuels et purement descriptifs, absence de lien entre indicateurs, causes et actions, d'où une perte de réactivité et d'efficacité décisionnelle."
+  },
+  {
+    "id": "aa11bb22-cadre-exc-000000000002",
+    "position": 12,
+    "filepath": "src/pages/slides/CadreExcellence.tsx",
+    "title": "Cadre théorique — Excellence opérationnelle",
+    "description": "Lean Management, Kaizen et excellence opérationnelle (OPEX).",
+    "speakerNotes": "Deuxième pilier : l'excellence opérationnelle. Le Lean Management vise à éliminer les gaspillages et à maximiser la valeur pour le client. Le Kaizen, c'est l'amélioration continue par petits pas, avec l'implication de tous. Ensemble, ils forment l'OPEX — Operational Excellence : une recherche de performance durable et compétitive. L'OPEX n'est pas un outil, c'est une culture."
+  },
+  {
+    "id": "aa11bb22-cadre-out-000000000004",
+    "position": 13,
+    "filepath": "src/pages/slides/CadreOutils.tsx",
+    "title": "Cadre théorique — Outils intégrés",
+    "description": "Les outils Lean/Kaizen intégrés dans l'OPEX Dashboard, expliqués un par un.",
+    "speakerNotes": "Voici les outils concrets intégrés dans la solution : le PDCA (Plan, Do, Check, Act), le cycle d'amélioration continue ; la VSM (Value Stream Mapping) pour cartographier le flux de valeur ; le QQOQCCP pour cadrer un problème ; le diagramme d'Ishikawa (causes-effet, 5M) ; les 5 Pourquoi pour remonter à la cause racine ; et Pareto pour prioriser (20 % des causes = 80 % des effets). Chaque outil est rattaché à un module concret de l'OPEX Dashboard."
+  },
+  {
+    "id": "aa11bb22-cadre-dig-000000000003",
+    "position": 14,
+    "filepath": "src/pages/slides/CadreDigital.tsx",
+    "title": "Cadre théorique — Digitalisation & IA",
+    "description": "Système intégré de pilotage, automatisation/reporting et IA.",
+    "speakerNotes": "Troisième pilier : la digitalisation. Un système intégré de pilotage centralise les données ERP et MES dans un tableau de bord digital unique. L'automatisation et le reporting, via la Business Intelligence (BI), génèrent analyses et rapports sans saisie manuelle. Enfin, l'intelligence artificielle dans le pilotage — l'AI Co-Pilot — transforme les données en aide à la décision. L'OPEX Dashboard réunit ces trois briques."
+  },
+  {
+    "id": "63e0d3f5-8f8c-4b0e-a05c-44ff06f493f5",
+    "position": 15,
+    "filepath": "src/pages/slides/IdeeDirectrice.tsx",
+    "title": "Idée directrice",
+    "description": "Un système unique pour piloter la performance.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "22b5262b-41bc-4946-b2f0-0a8939b10e76",
+    "position": 16,
+    "filepath": "src/pages/slides/OpexDashboard.tsx",
+    "title": "La solution : OPEX Dashboard",
+    "description": "Système intelligent et intégré de pilotage.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "c3e0f5a7-cc33-4d44-9e55-architecture01",
+    "position": 17,
+    "filepath": "src/pages/slides/Architecture.tsx",
+    "title": "Architecture de la plateforme",
+    "description": "Des données terrain à l'aide à la décision.",
+    "speakerNotes": "L'architecture suit un enchaînement cohérent : les données terrain alimentent la War Room (vision globale), puis le KPI Studio (analyse des indicateurs), le module Anomalies & Actions (traitement des écarts), les démarches d'amélioration Kaizen et VSM, le Project Portfolio (pilotage des projets), et enfin l'AI Co-Pilot, qui relie l'ensemble pour soutenir la décision. Chaque module a une fonction précise, sans rompre la continuité du pilotage."
+  },
+  {
+    "id": "9d23ee11-edb1-41c1-ad1b-11450e0565c8",
+    "position": 18,
+    "filepath": "src/pages/slides/WarRoom.tsx",
+    "title": "Module — War Room",
+    "description": "Vision globale du site et priorités SQDCM.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "c6fdeafd-5880-4ba2-9c4e-77e6487b9611",
+    "position": 19,
+    "filepath": "src/pages/slides/KpiStudio.tsx",
+    "title": "Module — KPI Studio",
+    "description": "Suivi et interprétation des indicateurs clés.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "73f786d1-7c1a-4c60-99e3-e8ec8d363338",
+    "position": 20,
+    "filepath": "src/pages/slides/Anomalies.tsx",
+    "title": "Module — Anomalies & Actions",
+    "description": "Des écarts aux plans d'action structurés.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "4258b013-f442-4202-8e2b-cdf02eac9f61",
+    "position": 21,
+    "filepath": "src/pages/slides/KaizenHub.tsx",
+    "title": "Module — Kaizen Hub",
+    "description": "Amélioration continue pilotée.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "4fcea43f-338c-49ba-897e-84bf58e030f8",
+    "position": 22,
+    "filepath": "src/pages/slides/VsmStudio.tsx",
+    "title": "Module — VSM Studio",
+    "description": "Cartographie du flux de valeur.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "b22d9b74-5ec7-447c-bf33-106c5afe364e",
+    "position": 23,
+    "filepath": "src/pages/slides/ProjectPortfolio.tsx",
+    "title": "Module — Project Portfolio",
+    "description": "Pilotage structuré des projets.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "107eaa20-f750-4e32-82af-08a2d1a6fdb5",
+    "position": 24,
+    "filepath": "src/pages/slides/AiCoPilot.tsx",
+    "title": "Module — AI Co-Pilot",
+    "description": "Assistant intelligent reliant tous les modules.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1f4d2c8-9b7e-4c3a-8f6d-2e5b1c9a7d40",
+    "position": 25,
+    "filepath": "src/pages/slides/LiveDemo.tsx",
+    "title": "Démonstration live",
+    "description": "Ouverture du dashboard réel et déroulé de la démo.",
+    "speakerNotes": "À ce stade, je passe de la présentation à la plateforme réelle, en un seul clic. Déroulé de la démo (3 min max) : 1) la War Room pour la vision globale ; 2) un indicateur dans le KPI Studio ; 3) le traitement d'une anomalie ; 4) un insight de l'AI Co-Pilot. En cas de problème réseau, retour à la synthèse."
+  },
+  {
+    "id": "78c2bab9-ebb6-4edd-87de-40f1f815104d",
+    "position": 26,
+    "filepath": "src/pages/slides/ValeurAjoutee.tsx",
+    "title": "Valeur ajoutée",
+    "description": "Du chaos dispersé au système unifié.",
+    "speakerNotes": ""
+  },
+  {
+    "id": "d4f1a6b8-dd44-4e55-9f66-limites000001",
+    "position": 27,
+    "filepath": "src/pages/slides/Limites.tsx",
+    "title": "Limites & conditions de réussite",
+    "description": "Ce qui reste à valider pour un impact durable.",
+    "speakerNotes": "En toute honnêteté, le projet a un périmètre : c'est une réalisation fonctionnelle qui démontre la faisabilité. Plusieurs conditions restent à réunir pour un impact durable : une validation en environnement réel sur la durée, la qualité et la fiabilité des données, l'intégration avec l'ERP et le MES, l'adoption par les utilisateurs, et la mesure de l'impact à long terme."
+  },
+  {
+    "id": "f3cd1ec9-f54d-44bf-b43f-f35b80e81204",
+    "position": 28,
+    "filepath": "src/pages/slides/Conclusion.tsx",
+    "title": "Conclusion",
+    "description": "Du pilotage dispersé au pilotage intelligent.",
+    "speakerNotes": "Pour conclure : ce projet fait passer le pilotage d'un état dispersé à un pilotage intelligent. Voir vite, grâce à une vision unifiée ; décider juste, grâce à des données reliées aux actions ; agir mieux, grâce à l'amélioration continue. L'OPEX Dashboard transforme des données dispersées en décisions concrètes."
+  },
+  {
+    "id": "e5a2b7c9-ee55-4f66-8a77-merci00000001",
+    "position": 29,
+    "filepath": "src/pages/slides/Merci.tsx",
+    "title": "Merci",
+    "description": "Remerciements et ouverture des questions.",
+    "speakerNotes": "Je vous remercie de votre attention et je suis à votre disposition pour vos questions."
+  }
+]

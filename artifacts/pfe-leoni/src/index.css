@@ -3,6 +3,8 @@
 @theme inline {
   --color-primary: var(--slide-primary);
   --color-accent: var(--slide-accent);
+  --color-ink: var(--slide-ink);
+  --color-sky: var(--slide-sky);
   --color-bg: var(--slide-bg);
   --color-text: var(--slide-text);
   --color-muted: var(--slide-muted);
@@ -11,14 +13,15 @@
 }
 
 :root {
-  /* Replace these with brand colors */
-  --slide-primary: #4f46e5;
-  --slide-accent: #06b6d4;
-  --slide-bg: #f8fafc;
-  --slide-text: #0f172a;
-  --slide-muted: #64748b;
-  --font-display-family: "Inter", system-ui, sans-serif;
-  --font-body-family: "Inter", system-ui, sans-serif;
+  --slide-primary: #285ccc;
+  --slide-accent: #fff2bd;
+  --slide-ink: #0b2150;
+  --slide-sky: #7aa6ff;
+  --slide-bg: #ffffff;
+  --slide-text: #0b2150;
+  --slide-muted: #5b6b8c;
+  --font-display-family: "Space Grotesk", sans-serif;
+  --font-body-family: "Manrope", sans-serif;
   color-scheme: light;
 }
 
@@ -33,6 +36,7 @@ body,
 body {
   background: var(--slide-bg);
   color: var(--slide-text);
+  font-family: var(--font-body-family);
 }
 
 .slide {
@@ -45,4 +49,125 @@ body {
   touch-action: none;
   user-select: none;
   -webkit-user-select: none;
+}
+
+/* ---- Morphose-style scoped entrance animations ----
+   Elements render at their FINAL visible state by default (export-safe).
+   Animations only run when an ancestor carries the `.play` class. */
+.fx-rise,
+.fx-fade,
+.fx-zoom,
+.fx-pop {
+  opacity: 1;
+}
+
+.play .fx-rise {
+  animation: riseIn 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.play .fx-fade {
+  animation: fadeIn 0.9s ease both;
+}
+.play .fx-zoom {
+  animation: zoomIn 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.play .fx-pop {
+  animation: popIn 0.6s cubic-bezier(0.2, 0.9, 0.3, 1.25) both;
+}
+
+.fx-draw {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 0;
+}
+.play .fx-draw {
+  animation: draw 1.5s ease both;
+}
+
+.play .core-pulse {
+  animation: pulse 3.2s ease-in-out infinite;
+}
+.play .spin-slow {
+  animation: spin 48s linear infinite;
+}
+.play .spin-rev {
+  animation: spinRev 60s linear infinite;
+}
+.play .floaty {
+  animation: floaty 6s ease-in-out infinite;
+}
+
+@keyframes riseIn {
+  from {
+    opacity: 0;
+    transform: translateY(3.2vh);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.55);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes draw {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.92;
+  }
+  50% {
+    transform: scale(1.06);
+    opacity: 1;
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinRev {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1.4vh);
+  }
 }
